@@ -56,7 +56,7 @@ app.get('/view', (req, res) => {
     }
   });
 });
-
+//connsct to the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
