@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f1dc;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #973838;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #198754; /* Bootstrap's green */
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for scaling */
+}
+
+button:hover {
+    background-color: #9ec74b;
+    transform: scale(1.1); /* Scale up the button by 10% on hover */
+}
+
+ul#fileList {
+    list-style: none;
+    padding: 0;
+}
+
+ul#fileList li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.file-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Storage App</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-success">GeeksForGeeks File Storage</h1>
+
+        <h2 class="mt-4">Upload File</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" name="file" required>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2 class="mt-4">Delete File</h2>
+        <form id="deleteForm">
+            <div class="mb-3">
+                <select id="fileSelect" name="fileName"></select>
+            </div>
+            <button type="button" onclick="deleteFile()">Delete</button>
+        </form>
+
+        <h2 class="mt-4">Uploaded Files</h2>
+        <ul id="fileList"></ul>
+    </div>
+
+    <script src="/script.js"></script>
+
+
+</body>
+</html>
